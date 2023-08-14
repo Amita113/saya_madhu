@@ -1,0 +1,48 @@
+<!-- Replacing String Content
+The replace() method replaces a specified value with another value in a string:
+
+By default, the replace() method replaces only the first match:
+
+By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>Replace "Google" with "IT Education centre" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="fourth">Please visit google GOOGLE!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("fourth").innerHTML;
+  document.getElementById("fourth").innerHTML =
+  // text.replace("Google","IT education centre");
+  text.replace(/google/gi,"IT education centre");
+}
+// regular expressions are patterns, it checks globally and clears sentitive
+//i -- insensitive, g-- global (searches complete string)
+</script>
+
+<!-- 
+  to make it insensitive
+  use a regular expression
+    <script>
+    function myFunction() {
+      let text = document.getElementById("fourth").innerHTML; 
+      document.getElementById("fourth").innerHTML =
+      text.replace(/GOOGLE/i,"IT education centre");
+    }
+    </script> -->
+
+</body>
+</html>
+
+

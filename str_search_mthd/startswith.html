@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p> The startsWith() method returns true if a string begins with a specified value.
+        Otherwise it returns false:</p>
+
+    <p id="test4"></p>
+    <script>
+        let text = "Hello world, welcome to the universe.";
+        document.getElementById("test4").innerHTML = text.startsWith("Hello");
+    </script>
+
+    <p>A start position for the search can be specified:
+
+        <p>
+        JavaScript String endsWith()
+The endsWith() method returns true if a string ends with a specified value.
+
+Otherwise it returns false:
+
+        </p>
+    </p>
+
+    <h4>Automatic replacing of expressions with real values is called string interpolation.</h4>
+
+    <h4>
+        Template literals provide an easy way to interpolate variables and expressions into strings.
+
+The method is called string interpolation.
+    </h4>
+
+<p id="second"></p>
+    
+<script>
+    let firstName = "John";
+    let lastName = "taylor";
+    
+    let text1 = `Welcome ${firstName}, ${lastName}!`;
+    
+    document.getElementById("second").innerHTML = text1;
+    </script>
+</body>
+
+</html>

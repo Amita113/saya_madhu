@@ -1,0 +1,25 @@
+JavaScript String lastIndexOf()
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+JavaScript String indexOf()
+The indexOf() method returns the index (position) the first occurrence of a string in a string:
+
+Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+
+Both methods accept a second parameter as the starting position for the search:
+let index = text.indexOf("locate", 15)
+
+
+***************************************************************************
+
+
+indexOf() Method	search() Method
+indexOf() method searches for a specified substring within a given string.	search() method searches for a regular expression pattern within a given string.
+
+The indexOf() method returns the index of the first occurrence of the specified substring.	The search() method returns the index of the first character of the match.
+
+The indexOf() method does not support regular expressions.	The search() method supports regular expressions./LOCATE/gi
+
+The indexOf() method can accept an optional parameter fromIndex to start the search from a specific index.	The search() method does not accept an optional parameter to start the search from a specific index.
+
+The indexOf() method is faster than the search() method because it does not support regular expressions.	The search() method is slower than the indexOf() method because it supports regular expressions.

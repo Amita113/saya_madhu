@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The matchAll() Method</h2>
+
+<p> The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).</p>
+
+
+
+<p id="fourth"></p>
+
+<script>
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+// const X = text.matchAll("Cats");
+const X = text.matchAll(/Cats/gi);
+
+document.getElementById("fourth").innerHTML = Array.from(X);
+</script>
+
+<p>If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.</p>
+</body>
+</html>

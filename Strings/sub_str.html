@@ -1,0 +1,43 @@
+<!-- 
+    
+    JavaScript String substr()
+substr() is similar to slice().
+
+1) The difference is that the second parameter specifies the length of the extracted part.
+
+
+2) The difference is that start and end values less than 0 are treated as 0 in substring().
+
+3) If the first parameter is negative, the position counts from the end of the string.
+
+Note
+JavaScript counts positions from zero.
+
+First position is 0.
+
+Second position is 1.
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="third"></p>
+
+<script>
+let str = "Apple, Banana,Kiwi";
+document.getElementById("third").innerHTML = str.substr(7,11);
+//start slicing from the start index and the second argument is the total length from their(start_index, total_length from their)
+</script>
+
+</body>
+</html>
+
+
+

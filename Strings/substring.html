@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="first"></p>
+
+    <!-- string.substring() is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero (0). start(start,end) -->
+
+    <script>
+        const str = "IT Education Centre";
+        // const result = str.substring(8, 25);
+        // its extracts on index before similar to slice and 
+        // if the start is greater it swaps and then extracts
+        const result = str.substring(8, 5);
+        console.log(result);
+        
+    </script>
+
+    <p>
+        JavaScript substring() different results of substring()
+
+If start > stop, then the function swaps both arguments.
+If any argument is negative or is NaN, it is treated as 0.
+JavaScript slice() different results of slice()
+
+If start > stop, This function will return an empty string. (“”)
+If the start is negative, It sets char from the end of the string, like substr().
+If stop is negative, It sets stop = string.length – Math.abs(stop) (original value)
+    </p>
+</body>
+
+</html>

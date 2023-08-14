@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="sixth">Hello World!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("sixth").innerHTML;
+  document.getElementById("sixth").innerHTML =
+  text.toUpperCase();
+}
+// same toLowerCase();
+</script>
+
+<h1>JavaScript String</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="seventh"></p>
+
+<script>
+let text1 = "Hello";
+let text2 = "World!";
+let text4 = "How are you"
+let text3 = text1.concat(" ",text2," ",text4);
+document.getElementById("seventh").innerHTML = text3;
+
+//The concat() method can be used instead of the plus operator. These two lines do the same:
+</script>
+
+</body>
+</html>

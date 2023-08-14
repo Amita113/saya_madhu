@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+  // string definition
+  const sentence = "JavaScript1JavaScript2";
+  // a pattern having 'JavaScript' followed by a digit
+  const regex = /JavaScript\d/g;
+  // finding matches in the string for the given regular expression
+  let results = sentence.matchAll(regex);
+  
+  // looping through the iterator
+  for (var result of results) {
+    console.log(result);
+  }
+</script>
+
+</body>
+</html>

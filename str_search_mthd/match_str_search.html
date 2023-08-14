@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<p> The match() method returns an array containing the results of matching a string against a string (or a regular expression).</p>
+
+<p>Perform a global, case-insensitive search for "ain":</p>
+
+<p id="test"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain"; 
+const myArr = text.match(/ain/gi);
+document.getElementById("test").innerHTML = myArr.length + " " + myArr;
+</script>
+
+<p>Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used , and with the match(), matchAll(), replace(), replaceAll(), search(), and split() methods of String.</p>
+
+<p>Perform a search for "ain":</p>
+
+<p id="test1"></p>
+
+<script>
+let text1 = "The rain in SPAIN stays mainly in the plain";
+const myArr1 = text1.match("ain");
+document.getElementById("test1").innerHTML = myArr1.length + " " + myArr1;
+</script>
+
+
+<p>The match() method retrieves the result of matching a string against a regular expression.</p>
+</body>
+</html>

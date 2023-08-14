@@ -1,0 +1,54 @@
+<!-- 
+    
+Extracting String Parts
+There are 3 methods for extracting a part of a string:
+
+slice(start, end)
+substring(start, end)
+substr(start, length) 
+
+
+JavaScript String slice()
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: start position, and end position (end not included).
+
+If a parameter is negative, the position is counted from the end of the string:
+
+If you omit the second parameter, the method will slice out the rest of the string:
+// string positioning is similar to array positioning
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>The sliced (extracted) part of the string is:</p>
+<p id="second"></p>
+<p id="car"></p>
+<script>
+    // here it is like a string
+let fruits = "Apple, Pomegranate, Kiwi";
+// start slicing from the given index and extract til one less than second arg
+let part = fruits.slice(7,13);
+// let part = fruits.slice(-13,-7);
+document.getElementById("second").innerHTML = part; 
+// here these are elements
+
+// the slice() method extracts the array from the given array starting from index 2 and including all the elements less than index 4.
+let arr = [23, 56, 87, 32, 75, 13];
+    // Extracted array
+    let new_arr = arr.slice(4, 5);
+console.log(new_arr);
+var cars=['Benz', 'Innova', 'Breeza', 'Etios', 'Dzire'];
+    var new_cars=cars.slice(1, 4);
+    document.getElementById("car").innerHTML=new_cars
+</script>
+
+</body>
+</html>
+
+
